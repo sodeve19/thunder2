@@ -1,4 +1,4 @@
 <figure>
-  <img src="http://lorempixel.com/300/300/people/" alt="Friend Picture" />
-  <p>Nombre de tu amigo, <strong>X años</strong></p>
+  <%= image_tag Gravatar.new(@friend.email).image_url(s: 300) %>
+  <p><%= @friend.name %>, <strong><%= @friend.age %> años</strong></p>
 </figure>
