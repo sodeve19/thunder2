@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <a href="">Registrarse</a>
+    <h1>TE GUSTA O NO</h1>
+  </header>
 
-<%= yield %>
+  <p>Elige aquellos amig@s de facebook que te gustan en secreto, te avisaremos si ambos coinciden, el resto va por tu cuenta.</p>
+
+  <div class="content">
+    <%= yield %>
+  </div>
+
+  <footer>
+    <p>Escribenos en twitter <a href="#">@tegustaono</a></p>
+  </footer>
 
 </body>
 </html>
