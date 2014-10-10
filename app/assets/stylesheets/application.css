@@ -35,7 +35,6 @@ header a {
   display: block;
   float: right;
 }
-
 header img {
   height: 30px;
   display: block;
@@ -50,6 +49,22 @@ figure {
 }
 figure img {
   height: 300px;
+}
+figure button {
+  margin-left: 20px;
+  text-align: right;
+  height: 50px;
+  width: 120px;
+  background: url(like.png) no-repeat;
+  cursor: pointer;
+}
+figure button:hover {
+  text-decoration: underline;
+}
+.like {
+  background-position: 0 -50px;
+}
+.nolike {
 }
 
 footer {
