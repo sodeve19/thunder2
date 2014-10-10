@@ -8,13 +8,19 @@
 </head>
 <body>
   <header>
-    <a href="">Registrarse</a>
+    <% if user_signed_in? %>
+      <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
+    <% end %>
     <h1>TE GUSTA O NO</h1>
   </header>
 
   <p>Elige aquellos amig@s de facebook que te gustan en secreto, te avisaremos si ambos coinciden, el resto va por tu cuenta.</p>
 
   <div class="content">
+    <% flash.each do |name, err|%>
+      <%= content_tag :div, err, class: name %>
+    <% end %>
+
     <%= yield %>
   </div>
 
