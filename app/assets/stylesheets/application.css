@@ -56,7 +56,6 @@ figure button {
   height: 50px;
   width: 120px;
   background: url(like.png) no-repeat;
-  cursor: pointer;
 }
 .like {
   background-position: 0 -50px;
@@ -75,4 +74,8 @@ footer {
 }
 .notice{
   color: darkgreen;
+}
+
+#match figure {
+  float: left;
 }
