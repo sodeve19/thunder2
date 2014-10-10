@@ -15,6 +15,7 @@ gem 'devise'
 gem 'gravatar-ultimate'
 
 group :development do
+  gem 'pry' #debugger
   gem 'spring'
   gem 'guard'
   gem 'guard-livereload', require: false

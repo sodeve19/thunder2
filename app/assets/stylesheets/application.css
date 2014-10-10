@@ -58,9 +58,6 @@ figure button {
   background: url(like.png) no-repeat;
   cursor: pointer;
 }
-figure button:hover {
-  text-decoration: underline;
-}
 .like {
   background-position: 0 -50px;
 }

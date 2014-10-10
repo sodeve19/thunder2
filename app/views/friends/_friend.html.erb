@@ -1,0 +1,11 @@
+<figure>
+  <%= image_tag Gravatar.new(@friend.email).image_url(s: 300) %>
+  <p><%= @friend.name %>, <strong><%= @friend.age %> años</strong></p>
+
+  <button class="like">
+    <%= link_to "Me Gusta", friends_like_path(id: @friend, liked: true), method: :post %>
+  </button>
+  <button class="nolike">
+    <%= link_to "No Me Gusta", friends_like_path(id: @friend, liked: false), method: :post %>
+  </button>
+</figure>

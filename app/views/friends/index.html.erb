@@ -1,7 +1,5 @@
-<figure>
-  <%= image_tag Gravatar.new(@friend.email).image_url(s: 300) %>
-  <p><%= @friend.name %>, <strong><%= @friend.age %> años</strong></p>
-
-  <button class="like">Me gusta</button>
-  <button class="nolike">No Me gusta</button>
-</figure>
+<% if @friend %>
+  <%= render 'friend' %>
+<% else %>
+  <%= render 'nofriend' %>
+<% end %>
