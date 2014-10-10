@@ -9,7 +9,8 @@
 <body>
   <header>
     <% if user_signed_in? %>
-      <%= link_to "Cerrar Sesion", destroy_user_session_path, method: :delete %>
+      <%= link_to "Salir", destroy_user_session_path, method: :delete %>
+      <%= image_tag Gravatar.new(current_user.email).image_url %>
     <% end %>
     <h1>TE GUSTA O NO</h1>
   </header>

@@ -55,6 +55,9 @@ GEM
     execjs (2.2.1)
     ffi (1.9.6)
     formatador (0.2.5)
+    gravatar-ultimate (2.0.0)
+      activesupport (>= 2.3.14)
+      rack
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -158,6 +161,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
+  gravatar-ultimate
   guard
   guard-livereload
   jbuilder (~> 2.0)

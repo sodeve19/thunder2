@@ -36,6 +36,12 @@ header a {
   float: right;
 }
 
+header img {
+  height: 30px;
+  display: block;
+  float: right;
+}
+
 figure {
   width: 300px;
   margin: 30px auto 30px auto;
