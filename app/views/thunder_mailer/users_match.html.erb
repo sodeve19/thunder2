@@ -1,0 +1,8 @@
+<h1>Has tenido un match!</h1>
+
+<h2>El usuario es... </h2>
+
+<p>
+  <%= image_tag Gravatar.new(@user.email).image_url(s: 300) %>
+  <p class="centro"><%= @user.name %>, <strong><%= @user.age %> años</strong></p>
+</p>
