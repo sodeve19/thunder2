@@ -15,6 +15,7 @@ class FriendsController < ApplicationController
     current_user.likes.create(friend_id: @friend.id, liked: like_or_unlike)
 
     if @friend.liked?(current_user)
+      ThunderMailer.users_match(current_user).deliver
       render :match
     else
       redirect_to root_path

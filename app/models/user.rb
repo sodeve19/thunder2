@@ -15,4 +15,18 @@ class User < ActiveRecord::Base
   def liked?(user)
     likes.find_by_friend_id(user.id)
   end
+
+  private 
+
+  def users_match_notification
+    ThunderMailer.users_match(self).deliver
+    
+  end
+
+  after_create :welcome_user_notification
+  def welcome_user_notification
+    ThunderMailer.welcome_user(self).deliver
+    
+  end
+
 end
